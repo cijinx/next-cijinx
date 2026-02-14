@@ -6,26 +6,26 @@
     "start": "next start"
   },
   "dependencies": {
-    "@auth0/auth0-react": "^1.12.0",
-    "@tailwindcss/typography": "^0.5.7",
-    "date-fns": "^2.29.3",
+    "@auth0/auth0-react": "^1.12.1",
+    "@tailwindcss/typography": "^0.5.19",
+    "date-fns": "^2.30.0",
     "gray-matter": "4.0.3",
-    "ioredis": "^5.2.4",
-    "nanoid": "^4.0.0",
+    "ioredis": "^5.9.3",
+    "nanoid": "^4.0.2",
     "next": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
-    "swr": "^2.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remark": "^14.0.3",
+    "remark-html": "^15.0.2",
+    "swr": "^2.4.0"
   },
   "devDependencies": {
-    "@types/node": "^18.11.5",
-    "@types/react": "^18.0.23",
-    "@types/react-dom": "^18.0.7",
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.1",
-    "typescript": "^4.8.4"
+    "@types/node": "^18.19.130",
+    "@types/react": "^18.3.28",
+    "@types/react-dom": "^18.3.7",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
   }
 }
