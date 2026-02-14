@@ -6,8 +6,8 @@ export default function Header() {
     <header className="py-6">
       <Container>
         <nav className="flex space-x-4">
-          <Link href="/">About</Link>
-          <Link href="/posts">Posts</Link>
+          <Link href="/">首页</Link>
+          <Link href="/posts">文档</Link>
         </nav>
       </Container>
     </header>

@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="zh-CN">
       <Head>
         <meta charSet="utf-8" />
         <meta name="robots" content="follow, index" />
