@@ -1,34 +1,32 @@
-# Blog with Comment
+# 开发一个基于Next.js的个人博客应用
 
-This project adds commenting functionality to [Next.js blog application](https://github.com/vercel/next.js/tree/canary/examples/blog) using Upstash and Auth0.
+此项目基于 [Next.js 博客应用](https://github.com/vercel/next.js/tree/canary/examples/blog) 添加了用户登陆功能（Auth0）和评论功能（Upstash）。
 
-The comment box requires Auth0 authentication for users to add new comments. A user can delete their own comment. Also admin user can delete any comment.
+发表评论需要用户通过 Auth0 认证登陆。用户可以删除自己的评论，管理员可以删除任何评论。
 
-Comments are stored in Serverless Redis ([Upstash](http://upstash.com/)).
+评论存储在 Redis ([Upstash](http://upstash.com/))中。
 
-### Demo
+### 访问博客
 
-[https://blog-with-comment.vercel.app/](https://blog-with-comment.vercel.app/)
+[https://next-cijinx.vercel.app/](https://next-cijinx.vercel.app/)
 
-## `1` Project set up
+## `1` 创建应用
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
-with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the
-example:
+执行 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)创建项目，可以使用任何你熟悉的工具来执行（[npm](https://docs.npmjs.com/cli/init)、[yarn](https://yarnpkg.com/lang/en/docs/cli/create/)、[bun](https://bun.com/docs)）：
 
 ```bash
-npx create-next-app --example blog-with-comment blog-with-comment-app
+bunx create-next-app --example blog-with-comment <project>
 ```
 
-## `2` Set up environment variables
+## `2` 设置环境变量
 
-Copy the `.env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
+将项目中的 `.env.local.example` 文件拷贝一份并命名为 `.env.local` (此文件将会被Git忽略，请勿上传至任何公开的Git仓库):
 
 ```bash
 cp .env.local.example .env.local
 ```
 
-## `3` Configuring Upstash
+## `3` 配置 Upstash
 
 Go to the [Upstash Console](https://console.upstash.com/) and create a new database
 
@@ -36,7 +34,7 @@ Go to the [Upstash Console](https://console.upstash.com/) and create a new datab
 
 - `REDIS_URL`: Find the URL in the database details page in Upstash Console clicking on **Redis Connect** button.
 
-## `4` Configuring Auth0
+## `4` 配置 Auth0
 
 1. Go to the [Auth0 dashboard](https://manage.auth0.com/) and create a new application of type **Single Page Web
    Applications**.
@@ -56,7 +54,7 @@ Go to the [Upstash Console](https://console.upstash.com/) and create a new datab
 - `NEXT_PUBLIC_AUTH0_CLIENT_ID`: Can be found in the Auth0 dashboard under `settings`.
 - `NEXT_PUBLIC_AUTH0_ADMIN_EMAIL`: This is the email of the admin user which you use while signing in Auth0. Admin is able to delete any comment.
 
-## Deploy Your Local Project
+## 部署个人博客
 
 To deploy your local project to Vercel, push it to GitHub/GitLab/Bitbucket
 and [import to Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=upstash-roadmap).
